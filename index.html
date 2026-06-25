@@ -1,95 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Fitness Zone Login</title>
 
-<style>
 body{
     margin:0;
-    height:100vh;
-    background:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48') center center no-repeat;
-    background-size:cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    padding:0;
+    overflow-x:hidden;
     font-family:Arial,sans-serif;
 }
 
-.login-box{
-    width:85%;
-    max-width:420px;
-    background:rgba(0,0,0,0.8);
-    padding:40px;
-    border-radius:25px;
+.hero{
+    width:100%;
+    min-height:100vh;
+
+    background:url('gym.jpg') center center no-repeat;
+    background-size:cover;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    backdrop-filter:blur(8px);
-    box-shadow:0 0 25px #00ff99;
+
+    position:relative;
 }
 
-h1{
-    color:#00ff99;
-    font-size:38px;
-    margin-bottom:10px;
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
 }
 
-p{
-    color:white;
-    margin-bottom:25px;
+.hero h1,
+.hero p,
+.hero button{
+    position:relative;
+    z-index:1;
 }
-
-input{
-    width:90%;
-    padding:15px;
-    margin:10px 0;
-    border:none;
-    border-radius:12px;
-    font-size:16px;
-}
-
-button{
-    width:95%;
-    padding:15px;
-    margin-top:15px;
-    border:none;
-    border-radius:12px;
-    background:#00ff99;
-    color:black;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-button:hover{
-    transform:scale(1.03);
-}
-
-.quote{
-    margin-top:20px;
-    color:#00ff99;
-    font-style:italic;
-}
-</style>
-</head>
-
-<body>
-
-<div class="login-box">
-
-<h1>💪 Fitness Zone</h1>
-
-<p>Transform Your Body. Transform Your Life.</p>
-
-<input type="text" placeholder="Username">
-
-<input type="password" placeholder="Password">
-
-<button>LOGIN</button>
-
-<div class="quote">
-"No Excuses. Just Results."
-</div>
-
-</div>
-
-</body>
-</html>
